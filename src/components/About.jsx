@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { Box, Button, InputAdornment, TextField, Typography } from '@mui/material'
+import { Box, Typography } from '@mui/material'
 import Navbar from './Navbar'
 import me_colored from '../assets/images/me_colored.png'
 import bottomShape from '../assets/images/BottomShape.png'
@@ -30,8 +30,8 @@ export default function About() {
     <Box sx={{flexGrow:1, color:'white', backgroundImage:`url(${bottomShape})`, backgroundRepeat: 'repeat-x'}}>
         <Box sx={{display:'flex', width:'100%', flexDirection:'row', flexWrap:'wrap'}}>
         <Box sx={{order:{xs:2, sm:1}, width:{xs:'100%',sm:'60%'}, alignItems:'flex-start', p:'1rem 4rem 0.5rem 4rem', display:'flex', flexDirection:'column', justifyContent:'space-around' }}>
-        <Typography variant='h3' component='div' sx={{mb:'2rem', fontFamily:'Libre Baskerville', display:'flex', alignItems:'center'}}>About Me</Typography>
-        <Typography variant='h6' sx={{fontSize:'1.20rem', fontFamily:'IBM Plex Mono', mb:'1.5rem'}}>3 years of experience</Typography>
+        <Typography variant='h3' component='div' sx={{mb:'2rem', fontFamily:'Libre Baskerville', display:'flex', fontSize:{xs:'25px', sm:'35px'},  alignItems:'center'}}>About Me</Typography>
+        <Typography variant='h6' sx={{fontSize:{xs:'1rem', sm:'1.20rem'}, fontFamily:'IBM Plex Mono', mb:'1.5rem'}}>3 years of experience</Typography>
         </Box>
 
         <Box sx={{order:{xs:1, sm:2}, width:{xs:'100%', sm:'40%'}, display:'flex', flexDirection:'column', flexWrap:'wrap', alignItems:'center', justifyContent:'center'}}>
@@ -64,7 +64,7 @@ export default function About() {
         borderRadius:'0 30% 30% 0',
         zIndex:1
         }}></div>
-        <Box sx={{fontSize:{xs:'1.6rem', sm:'2rem'}}}>Thanks for Visiting</Box>
+        <Box sx={{fontSize:{xs:'1.3rem', sm:'2rem'}}}>Thanks for Visiting</Box>
         <div className='spike_mobile' style={{
           position: "absolute",
           right: "180px",
@@ -82,23 +82,23 @@ export default function About() {
           <Box sx={{display:'flex', flexWrap:'wrap', mt:'1.4rem', gap:'1rem', flexDirection:'row', alignItems:'center', justifyContent:'center'}}>
             <Box sx={{display:'flex', fontSize:"0.6rem", gap:'1rem', flexDirection:'row', alignItems:'center', justifyContent:'center'}}>
               <span><FaPhoneSquareAlt fontSize='20px' color='rgba(213, 184, 255, 0.6)'/></span>
-              <span><a  href='tel:+2348069810575'  target='_blank'>+2348069810575</a></span>
+              <span><a  href='tel:+2348069810575'  target='_blank' rel="noopener noreferrer">+2348069810575</a></span>
             </Box>
             <Box sx={{display:'flex', fontSize:"0.6rem", gap:'1rem', flexDirection:'row', alignItems:'center', justifyContent:'center'}}>
               <span><IoMdMail fontSize='20px' color='rgba(213, 184, 255, 0.6)'/></span>
-              <span><a href='mailto:temiiadebisi@gmail.com'  target='_blank'>temiiadebisi@gmail.com</a></span>
+              <span><a href='mailto:temiiadebisi@gmail.com'  target='_blank' rel="noopener noreferrer">temiiadebisi@gmail.com</a></span>
             </Box>
             <Box sx={{display:'flex', fontSize:"0.6rem", gap:'1rem', flexDirection:'row', alignItems:'center', justifyContent:'center'}}>
               <span><FaLinkedin fontSize='20px' color='rgba(213, 184, 255, 0.6)'/></span>
-              <span><a href='https://www.linkedin.com/in/adebisi-kupoluyi' target='_blank'>LinkedIn</a></span>
+              <span><a href='https://www.linkedin.com/in/adebisi-kupoluyi' target='_blank' rel="noopener noreferrer">LinkedIn</a></span>
             </Box>
             <Box sx={{display:'flex', fontSize:"0.6rem", gap:'1rem', flexDirection:'row', alignItems:'center', justifyContent:'center'}}>
               <span><FaBehanceSquare fontSize='20px' color='rgba(213, 184, 255, 0.6)'/></span>
-              <span><a href='https://www.behance.net/adebisikupoluyi' target='_blank'>Behance</a></span>
+              <span><a href='https://www.behance.net/adebisikupoluyi' target='_blank' rel="noopener noreferrer">Behance</a></span>
             </Box>
             <Box sx={{display:'flex', fontSize:"0.6rem", gap:'1rem', flexDirection:'row', alignItems:'center', justifyContent:'center'}}>
               <span><AiFillInstagram fontSize='20px' color='rgba(213, 184, 255, 0.6)'/></span>
-              <span><a href='https://instagram.com/designlotw?igshid=YmMyMTA2M2Y=' target='_blank'>Instagram</a></span>
+              <span><a href='https://instagram.com/designlotw?igshid=YmMyMTA2M2Y=' target='_blank' rel="noopener noreferrer">Instagram</a></span>
             </Box>
           </Box>
         </Box>

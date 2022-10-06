@@ -1,5 +1,4 @@
 import React from 'react'
-import { Container } from '@mui/material'
 import Navbar from './Navbar'
 import Hero from './Hero'
 import Specialization from './Specialization'

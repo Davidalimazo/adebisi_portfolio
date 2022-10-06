@@ -4,7 +4,7 @@ import contact_img from '../assets/images/contact_img.png'
 
 export default function Form() {
   return (
-    <Box sx={{background:'rgba(26, 18, 58, 0.6)', borderRadius: "20px", mt:'3.5rem', width:{sx:'100%', sm:'60%', lg:'50%'}}} className='contact' id='contact'>
+    <Box sx={{background:'rgba(26, 18, 58, 0.6)', borderRadius: "20px", mt:'3.5rem', width:{sx:'100%', sm:'70%', lg:'50%'}}} className='contact' id='contact'>
           <form className='ab_form' style={{flexDirection:'column'}}>
             <Box sx={{display:'flex', alignItems:'center', justifyContent:'center', flexDirection:'column'}}>
               <Box sx={{fontSize:'24px', fontWeight:'700', lineHeight:'40px'}}>Contact me</Box>
@@ -14,7 +14,7 @@ export default function Form() {
             <input placeholder='Enter your name' type={'text'} className='adb_txf'/>
             <input placeholder='Enter your email address' type={'text'} className='adb_txf'/>
             <textarea placeholder='Type your message...' type={'text'} rows={10} className='adb_txf adb_message'/>
-            <Button variant='contained' type='submit' sx={{mt:'2rem', padding:'5px 25px', borderRadius:'30px', background:'linear-gradient(247.96deg, #A145A9 -31.52%, #636BBC 63.23%, #4A7BC4 106.42%)', padding:'10px 20px'}}>send  message</Button>
+            <Button variant='contained' type='submit' sx={{mt:'2rem', borderRadius:'30px', background:'linear-gradient(247.96deg, #A145A9 -31.52%, #636BBC 63.23%, #4A7BC4 106.42%)', padding:'10px 20px'}}>send  message</Button>
           </Box>
           <Box sx={{display:'flex', alignItems:'center', justifyContent:'flex-end'}}>
             <img src={contact_img} className='about_emoji' style={{filter: 'grayscale(70%)'}} alt="" />

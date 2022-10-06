@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, IconButton, Stack, Typography, Button } from "@mui/material";
+import { Box, IconButton, Typography, Button } from "@mui/material";
 import bottomShape from "../assets/images/BottomShape.png";
 import me from "../assets/images/BWImage.png";
 import InstagramIcon from "@mui/icons-material/Instagram";
@@ -11,37 +11,37 @@ import Typed from "react-typed";
 import { motion } from "framer-motion/dist/es/index";
 
 const containerVariants = {
-  hidden:{
-    x:'-100vw'
+  hidden: {
+    x: "-100vw",
   },
-  visible:{
-    x:0,
-    transition:{
-      delay:0.3,
-      duration:0.3
+  visible: {
+    x: 0,
+    transition: {
+      delay: 0.3,
+      duration: 0.3,
     },
-    exit:{
-      x:'-100vw',
-      transition:{
-        ease:'easeInOut'
-      }
-    }
-  }
-}
+    exit: {
+      x: "-100vw",
+      transition: {
+        ease: "easeInOut",
+      },
+    },
+  },
+};
 
 export default function Hero() {
   return (
     <motion.div
-    variants={containerVariants}
-    initial='hidden'
-    animate='visible'
-    exit='exit'
+      variants={containerVariants}
+      initial="hidden"
+      animate="visible"
+      exit="exit"
       className="hero"
       style={{
         backgroundImage: `url(${bottomShape})`,
         backgroundRepeat: "repeat-x",
-        flexGrow: 1, 
-        color: "white" 
+        flexGrow: 1,
+        color: "white",
       }}
     >
       <Box sx={{ display: "flex", flexWrap: "wrap" }}>
@@ -65,6 +65,7 @@ export default function Hero() {
           </Typography>
           <Typography
             variant="h2"
+            className="hero_intro"
             sx={{
               fontSize: "3.40rem",
               fontFamily: "Libre Baskerville",
@@ -122,7 +123,7 @@ export default function Hero() {
               variant="contained"
               sx={{
                 mr: 4,
-                fontSize: "0.8rem",
+                fontSize: {xs:"0.5rem", sm:"0.8rem"},
                 padding: { xs: "10px 15px", sm: "10px 20px" },
                 borderRadius: "30px",
                 background:
@@ -138,7 +139,7 @@ export default function Hero() {
               variant="contained"
               sx={{
                 borderRadius: "30px",
-                fontSize: "0.8rem",
+                fontSize: {xs:"0.5rem", sm:"0.8rem"},
                 padding: { xs: "10px 15px", sm: "10px 20px" },
                 background: "#F7F7F8",
                 color: "#6C66B9",
@@ -162,15 +163,13 @@ export default function Hero() {
         >
           <Box sx={{ borderRadius: "60%", height: "78%" }}>
             <motion.img
-              initial={{ 
-                opacity:0,
-                x: "100vw" 
+              initial={{
+                opacity: 0,
+                x: "100vw",
               }}
-              animate={{ x: 0,
-              opacity:1
-             }}
-              transition={{ delay: 1, duration:3 }}
-              when='beforeChildren'
+              animate={{ x: 0, opacity: 1 }}
+              transition={{ delay: 1, duration: 3 }}
+              when="beforeChildren"
               src={me}
               style={{
                 width: "100%",
@@ -215,9 +214,14 @@ export default function Hero() {
       <CarouselD />
       <style>
         {`
-            .adb_title{
-              
-            }
+        @media(max-width:500px){
+          .hero_intro{
+            font-size:22px;
+          }
+          .adb_title{
+              font-size:24px;
+          }
+        }  
             `}
       </style>
     </motion.div>

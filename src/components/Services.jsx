@@ -1,5 +1,5 @@
 import React from 'react'
-import { Box, Grid, Paper, Card, CardMedia, CardHeader, CardContent, Typography, Avatar } from '@mui/material'
+import { Box, Grid, Card, CardHeader, CardContent, Typography, Avatar } from '@mui/material'
 import bg_gradient from '../assets/images/bg_gradient.png'
 import Diamond from '../assets/images/Diamond.png'
 import iconcon from '../assets/images/iconcon.png'
@@ -21,7 +21,7 @@ export default function Services() {
          transition={{duration:2, delay:-2}}
         style={{flex:1, display:'flex', marginLeft:'35px', alignItems:'center', justifyContent:'center', position:'relative'}}>
         <img src={bg_gradient} style={{objectFit:'cover', width:'75%'}} alt="bg_gradient" />
-        <Box sx={{position:'absolute', left:'120px', fontSize:'35px'}}>
+        <Box sx={{position:'absolute', left:{xs:'70px', sm:'120px'}, fontSize:{xs:'25px', sm:'35px'}}}>
         <Typed
                 strings={["Get the best professional Experience.."]}
                 typeSpeed={150}
@@ -46,7 +46,7 @@ export default function Services() {
         <Card sx={{ borderRadius:'12px'}}>
             <CardHeader 
             avatar={
-                <Avatar sx={{bgcolor:'white'}}><img src={Diamond} style={{width:'80%'}}/></Avatar>
+                <Avatar sx={{bgcolor:'white'}}><img src={Diamond} style={{width:'80%'}} alt='my services'/></Avatar>
             }
             />
             <CardContent>
@@ -59,7 +59,7 @@ export default function Services() {
         <Card sx={{ borderRadius:'12px'}}>
             <CardHeader 
             avatar={
-                <Avatar sx={{bgcolor:'white'}}><img src={iconcon} style={{width:'80%'}}/></Avatar>
+                <Avatar sx={{bgcolor:'white'}}><img src={iconcon} style={{width:'80%'}} alt='my services'/></Avatar>
             }
             />
             <CardContent>
@@ -72,7 +72,7 @@ export default function Services() {
         <Card sx={{ borderRadius:'12px'}}>
         <CardHeader 
         avatar={
-            <Avatar sx={{bgcolor:'white'}}><img src={dev} style={{width:'70%'}}/></Avatar>
+            <Avatar sx={{bgcolor:'white'}}><img src={dev} style={{width:'70%'}} alt='my services'/></Avatar>
         }
         />
         <CardContent>
@@ -85,7 +85,7 @@ export default function Services() {
         <Card sx={{ borderRadius:'12px'}}>
             <CardHeader 
             avatar={
-                <Avatar sx={{bgcolor:'white'}}><img src={piechart} style={{width:'80%'}}/></Avatar>
+                <Avatar sx={{bgcolor:'white'}}><img src={piechart} style={{width:'80%'}} alt='my services'/></Avatar>
             }
             />
             <CardContent>
