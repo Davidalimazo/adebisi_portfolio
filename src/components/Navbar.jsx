@@ -8,7 +8,7 @@ import {
   ListItemText,
   Toolbar,
 } from "@mui/material";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import MenuIcon from "@mui/icons-material/Menu";
 import "./navbar.css";
 import logo from "../assets/images/MyLogo.png";
@@ -55,7 +55,7 @@ export default function Navbar() {
       <AppBar position="relative" sx={{ bgcolor: "#0E0824", color: "white" }}>
         <Toolbar>
           <Box sx={{ display: "flex", pl: "2rem", alignItems: "center" }}>
-            <img src={logo} className="myLogo" alt="adebisi logo" />
+            <Link to='/'><img src={logo} className="myLogo" alt="adebisi logo" /></Link>
           </Box>
           <Box flexGrow={1} />
           <Box sx={{ display: { xs: "none", sm: "flex" } }}>

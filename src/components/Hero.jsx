@@ -9,6 +9,7 @@ import "./hero.css";
 import CarouselD from "./Carousel";
 import Typed from "react-typed";
 import { motion } from "framer-motion/dist/es/index";
+import { Link } from 'react-router-dom';
 
 const containerVariants = {
   hidden: {
@@ -144,9 +145,8 @@ export default function Hero() {
                 background: "#F7F7F8",
                 color: "#6C66B9",
               }}
-              href="about"
             >
-              Contact me
+              <Link to='about' className='ct_link'>Contact me</Link>
             </Button>
           </Box>
         </Box>
@@ -214,7 +214,17 @@ export default function Hero() {
       <CarouselD />
       <style>
         {`
+        .ct_link{
+            color:inherit;
+            background:inherit;
+        }
+        .ct_link:hover{
+            color:white;
+        }
         @media(max-width:500px){
+          .ct_link{
+           font-size:0.5rem;
+        }
           .hero_intro{
             font-size:22px;
           }

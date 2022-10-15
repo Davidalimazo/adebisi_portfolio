@@ -29,7 +29,7 @@ export default function CarouselD() {
 
 
   const onEnd=(next, currentIndex)=>{
-    if(currentIndex === carouselItems.length){
+    if(currentIndex === 2){
      carouselRef.current.goTo(0)
     }
   }
@@ -45,7 +45,7 @@ export default function CarouselD() {
       pagination={false}>
         {
           carouselItems && carouselItems.map((item)=>(
-            <Box sx={{padding:'10px', display:'flex', alignItems:'center', height:'150px'}} key={item.id}>
+            <Box sx={{padding:'10px', display:'flex', alignItems:'center', height:'120px'}} key={item.id}>
             <img
             className="d-block w-100"
             style={{padding:'10px 0', objectFit:'cover', width:'100%', height:'100%'}}

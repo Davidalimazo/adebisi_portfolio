@@ -14,12 +14,15 @@ import Form from './Form'
 import {motion} from 'framer-motion'
 
 
+
 export default function About() {
   const [width, setWidth]   = useState(window.innerWidth);
+
 
   const updateDimensions = () => {
       setWidth(window.innerWidth);
   }
+
   useEffect(() => {
       window.addEventListener("resize", updateDimensions);
       return () => window.removeEventListener("resize", updateDimensions);
