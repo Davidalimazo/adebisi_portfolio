@@ -12,6 +12,7 @@ export const mywork = [
     link: "#",
     type: "Proptech",
     img: mywork1,
+    team:'',
     name: "SmartRent Website",
     text:
       "Smartrent offers full control to property owner,landlord and tenant by providing secured and stress-free means of property agreement between both parties.",
@@ -22,6 +23,7 @@ export const mywork = [
     link: "https://pmportal.etranzactng.com",
     type: "Fintech",
     img: mywork2,
+    team:'',
     name: "Pocketmoni - Web & Mobile App",
     text:
       "This is a mobile money wallet that enables users to perform diverse transactions such as bill payment, airtime purchase, money transfer and so much more seamlessly.",
@@ -33,6 +35,7 @@ export const mywork = [
     type: "Regtech",
     img: mywork3,
     name: "Tracka - Web & Mobile App",
+    team:'Co-Designed by Team member @Temitayo Mcjulie',
     text:
       "This is a web & mobile application for visitor and staff management. It enables easy scheduling of visits by employee of an organisation and also management and tracking of individual work tools.",
   },
@@ -43,6 +46,7 @@ export const mywork = [
       "https://www.behance.net/gallery/121456617/Cuana-Spice-A-UX-Case-Study",
     type: "Foodtech",
     img: mywork4,
+    team:'',
     name: "Cuana Spice Mobile App",
     text:
       "This is a mobile application that enables users to make online food ordering from preferred restaurant, full customization of meals with prompt delivery.",
@@ -54,6 +58,7 @@ export const mywork = [
       "https://www.behance.net/gallery/120347257/World-Citizen-UX-case-study-Cloth-donation-application",
     type: "Cleantech",
     img: mywork5,
+    team:'',
     name: "World Citizen Cloth Donation App",
     text:
       "This mobile solution aims at solving the issues around donating clothes and offers a platform for cloth donors to easily have their abandoned clothes donated when and as they desire.",
@@ -65,6 +70,7 @@ export const mywork = [
       "https://www.behance.net/gallery/122488447/Co-working-space-UX-Case-Study-web-page",
     type: "Edtech",
     img: mywork6,
+    team:'',
     name: "Expresso Website Redesign",
     text:
       "This web solution is a platform for individuals or teams to book affordable work space online easily in a cozy and convienient environment.",

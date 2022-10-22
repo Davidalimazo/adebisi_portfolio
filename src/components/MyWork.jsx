@@ -1,8 +1,5 @@
 import React from "react";
-import {
-  Box,
-  Typography,
-} from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import Navbar from "./Navbar";
 import bottomShape from "../assets/images/BottomShape.png";
 import Footer from "./Footer";
@@ -97,7 +94,7 @@ export default function MyWork() {
         >
           {mywork &&
             mywork.map((item) => {
-              const { id, name, type, text, img, active, link } = item;
+              const { id, name, type, text, img, active, link, team } = item;
               return (
                 <Box
                   sx={{
@@ -153,17 +150,29 @@ export default function MyWork() {
                       color: "rgba(223, 223, 223, 0.8)",
                       mr: "2rem",
                       ml: "2rem",
-                      mb:{xs:'20px'}
+                      mb: { xs: "20px" },
                     }}
                   >
                     {text}
                   </Box>
-                  <Box variant="contained" sx={{ ml: "2rem", mr: "2rem" }}>
+                  <Box
+                    variant="contained"
+                    sx={{
+                      ml: "2rem",
+                      mr: "2rem",
+                      display: "flex",
+                      flexDirection: "row",
+                      justifyContent: "space-between",
+                      alignItems: "center",
+                    }}
+                    className='case_study_mobile'
+                  >
                     <a
+                    className="case_study_a"
                       style={{
                         float: "left",
                         marginRight: "2rem",
-                        mt:{xs:'20px', sm:'20px'},
+                        mt: { xs: "20px", sm: "20px" },
                         textAlign: "center",
                         borderRadius: "30px",
                         background: !active
@@ -181,12 +190,38 @@ export default function MyWork() {
                     >
                       View Case Study
                     </a>
+                    <span
+                      style={{
+                        fontFamily: "'Raleway', sans-serif",
+                        fontWeight: 400,
+                        fontSize: "12px",
+                        lineHeight: "24px",
+                        letterSpacing: "0.01em",
+                        color: "rgba(255, 255, 255, 0.7)",
+                      }}
+                    >
+                      {team}
+                    </span>
                   </Box>
                 </Box>
               );
             })}
         </Box>
       </Box>
+      <style>
+        {
+          `
+          @media(max-width:575px){
+            .case_study_mobile{
+                flex-direction: column !important;
+            }
+            .case_study_a{
+              margin-bottom: 10px;
+            }
+        }
+          `
+        }
+      </style>
       <Footer />
     </div>
   );
