@@ -1,0 +1,20 @@
+/* .hero{
+
+} */
+@media(max-width:420px){
+    /* .hero{
+        margin-top: 40px;
+        color: black;
+    } */
+    .hero_btns{
+        justify-content: space-around;
+        display: flex;
+        flex-direction: row;
+    }
+    .hero_btns button{
+        font-size: 10px;
+    }
+    .as_box{
+        width: 100%;
+    }
+}
