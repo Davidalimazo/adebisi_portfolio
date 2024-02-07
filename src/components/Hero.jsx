@@ -8,7 +8,7 @@ import { ImBehance2 } from "react-icons/im";
 import "./hero.css";
 import CarouselD from "./Carousel";
 import Typed from "react-typed";
-import { motion } from "framer-motion/dist/es/index";
+import {motion} from 'framer-motion'
 import { Link } from 'react-router-dom';
 
 const containerVariants = {

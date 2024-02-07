@@ -6,7 +6,7 @@ import iconcon from '../assets/images/iconcon.png'
 import dev from '../assets/images/dev.png'
 import piechart from '../assets/images/piechart.png'
 import Typed from "react-typed";
-import { motion } from "framer-motion/dist/es/index";
+import {motion} from 'framer-motion'
 
 export default function Services() {
   return (
